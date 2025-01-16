@@ -1,10 +1,17 @@
 import { MdArrowOutward } from "react-icons/md";
 import { PROJECTS } from "../constants";
-
+import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <section className="pt-20" id="projects">
-      <h2 className="mb-8 text-center text-3xl lg:text-4xl">Projects</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="mb-8 text-center text-3xl lg:text-4xl"
+      >
+        Projects
+      </motion.h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
           <div
