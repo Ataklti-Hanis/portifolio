@@ -1,5 +1,7 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+
 const App = () => {
   return (
     <div className="rlative h-full overflow-auto antialiased">
@@ -7,6 +9,7 @@ const App = () => {
       <div className="relative z-10 flex flex-col items-center p-4 sace-y-8 container mx-auto">
         <Hero />
         <Navbar />
+        <Projects />
       </div>
     </div>
   );

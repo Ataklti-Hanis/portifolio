@@ -1,4 +1,4 @@
-import React from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import logo from "../assets/logo.JPG";
 import { NAVIGATION_LINKS } from "../constants";
@@ -65,11 +65,26 @@ const Navbar = () => {
                 {isMobileMenuOpen ? (
                   <FaTimes className="m-2 w-5 h-6" />
                 ) : (
-                  <FaBars />
+                  <FaBars className="m-2 w-5 h-6" />
                 )}
               </button>
             </div>
           </div>
+          {isMobileMenuOpen && (
+            <ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
+              {NAVIGATION_LINKS.map((item, index) => (
+                <li key={index}>
+                  <a
+                    className="block w-full text-lg"
+                    href={item.href}
+                    onClick={(e) => e.target.href}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </nav>
     </div>
