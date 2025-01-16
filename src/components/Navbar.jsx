@@ -12,8 +12,8 @@ const Navbar = () => {
     const targetElement = document.querySelector(href);
     if (targetElement) {
       const offset = -85;
-      const elmentPostion = targetElement.getBoundingClientRect().top;
-      const offsetPostion = elmentPostion + window.scrollY + offset;
+      const elementPostion = targetElement.getBoundingClientRect().top;
+      const offsetPostion = elementPostion + window.scrollY + offset;
       window.scrollTo({
         top: offsetPostion,
         behavior: "smooth",
@@ -39,7 +39,7 @@ const Navbar = () => {
                     <a
                       className="text-sm hover:text-yellow-400"
                       href={item.href}
-                      onClick={(e) => handleLinkClick(e, item, item.href)}
+                      onClick={(e) => handleLinkClick(e, item.href)}
                     >
                       {item.label}
                     </a>
