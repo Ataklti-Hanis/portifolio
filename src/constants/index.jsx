@@ -96,54 +96,54 @@ export const SKILLS = [
   {
     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
-    experience: "2+ years",
+    experience: "Experienced 💪",
   },
   {
     icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
     name: "Next.js",
-    experience: "1+ year",
+    experience: "Beginner 👶",
   },
   {
     icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
     name: "MongoDB",
-    experience: "1.5+ years",
+    experience: "Intermediate 👍",
   },
   {
     icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
     name: "Redis",
-    experience: "1+ year",
+    experience: "Beginner 👶",
   },
   {
     icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
     name: "Node.js",
-    experience: "2+ years",
+    experience: "Experienced 💪",
   },
   {
     icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
     name: "PostgreSQL",
-    experience: "1+ year",
+    experience: "Experienced 💪",
   },
 ];
 
 export const EXPERIENCES = [
   {
-    title: "Lead Frontend Developer",
-    company: "Innovative Tech Solutions",
+    title: "Junior Frontend Developer",
+    company: "Self Developing",
     duration: "July 2020 - Present",
     description:
-      "As the Lead Frontend Developer, I spearheaded the development of advanced web applications using cutting-edge technologies like React, Redux, and TypeScript. I worked closely with cross-functional teams, including designers, product managers, and backend developers, to deliver seamless and high-performance user experiences.",
+      "As a Junior Frontend Developer, I contributed to the development of web applications using technologies like React and TypeScript. I collaborated with cross-functional teams, including designers and senior developers, to assist in delivering user-friendly interfaces and improving overall user experiences.",
   },
   {
-    title: "Frontend Engineer",
-    company: "Digital Creations",
-    duration: "February 2016 - June 2020",
+    title: "Junior Frontend Engineer",
+    company: "Self-Develope",
+    duration: "February 2020 - Present",
     description:
-      "At Digital Creations, I focused on building highly interactive and responsive web interfaces using HTML, CSS, JavaScript, and modern libraries like React. I collaborated closely with UX/UI designers to implement design changes that enhanced user engagement and satisfaction. My role involved optimizing website performance, ensuring cross-browser compatibility, and implementing SEO best practices. ",
+      "At Digital Creations, I focused on building interactive web interfaces using HTML, CSS, and JavaScript. I worked closely with UX/UI designers to implement design changes that enhanced user engagement. My responsibilities included optimizing website performance and ensuring cross-browser compatibility. ",
   },
   {
     title: "Junior Web Developer",
-    company: "Bright Future Technologies",
-    duration: "August 2014 - January 2016",
+    company: "Mekelle University",
+    duration: "August 2020 - January 2021",
     description:
       "In my role as a Junior Web Developer, I assisted in the development and maintenance of various web applications. I gained hands-on experience in utilizing HTML, CSS, and JavaScript to create user-friendly interfaces. I actively participated in team meetings, contributed to project planning, and collaborated with senior developers to implement new features.",
   },
@@ -151,18 +151,18 @@ export const EXPERIENCES = [
 
 export const EDUCATION = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    duration: "September 2012 - June 2014",
+    degree: "Bachlor of Science in Computer Science",
+    institution: "Mekelle University",
+    duration: "September 2017 - June 2023",
     description:
-      "Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
+      "Specialized in Computer Science with a focus on Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications using advanced interactive techniques. Engaged in diverse projects involving frontend development, algorithms, and data structures.",
   },
   {
-    degree: "Bachelor of Science in Information Technology",
-    institution: "University of California, Berkeley",
-    duration: "September 2008 - June 2012",
+    degree: "Bachelor of Art in Managemnt",
+    institution: "Genfel Collage",
+    duration: "September 2019 - June 2022",
     description:
-      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
+      "Specialized in project management, strategic planning, and resource allocation. Actively participated in business clubs and case competitions, where I led teams to develop innovative solutions for real-world problems. Completed a senior project focused on creating a comprehensive business plan for an e-commerce platform. Graduated with a high GPA.",
   },
 ];
 
