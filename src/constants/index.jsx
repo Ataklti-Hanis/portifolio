@@ -44,7 +44,7 @@ export const HERO = {
 export const PROJECTS = [
   {
     id: 1,
-    name: "Personal Portfoliouuu",
+    name: "Personal Portfolio",
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
     image: projectImage1,

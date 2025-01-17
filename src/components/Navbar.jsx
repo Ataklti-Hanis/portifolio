@@ -5,6 +5,8 @@ import { NAVIGATION_LINKS } from "../constants";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(""); // State to track active link
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -22,6 +24,7 @@ const Navbar = () => {
       });
     }
     setIsMobileMenuOpen(false);
+    setActiveLink(href); // Set the clicked link as active
   };
 
   return (
@@ -40,7 +43,9 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-sm hover:text-yellow-400"
+                      className={`text-sm hover:text-yellow-400 ${
+                        activeLink === item.href ? "text-yellow-400" : ""
+                      }`}
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >
@@ -78,7 +83,9 @@ const Navbar = () => {
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
                   <a
-                    className="block w-full text-lg"
+                    className={`block w-full text-lg ${
+                      activeLink === item.href ? "text-yellow-400" : ""
+                    }`}
                     href={item.href}
                     onClick={(e) => handleLinkClick(e, item.href)}
                   >
