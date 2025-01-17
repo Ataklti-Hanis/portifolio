@@ -59,7 +59,7 @@ const ContactForm = () => {
     <div className="p-4 lg:w-3/4" id="contact">
       <Toaster />
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
-        Let's Connect
+        Contact Me
       </h2>
       <form action="" onSubmit={handleSubmit}>
         <div className="mb-4 flex space-x-4">

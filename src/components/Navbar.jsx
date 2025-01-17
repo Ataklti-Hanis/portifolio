@@ -1,31 +1,34 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
-import logo from "../assets/logo.JPG";
+import logo from "../assets/logo.jpg";
 import { NAVIGATION_LINKS } from "../constants";
+
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
   const handleLinkClick = (e, href) => {
     e.preventDefault();
     const targetElement = document.querySelector(href);
     if (targetElement) {
       const offset = -85;
-      const elementPostion = targetElement.getBoundingClientRect().top;
-      const offsetPostion = elementPostion + window.scrollY + offset;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY + offset;
       window.scrollTo({
-        top: offsetPostion,
+        top: offsetPosition,
         behavior: "smooth",
       });
     }
     setIsMobileMenuOpen(false);
   };
+
   return (
     <div>
-      <nav className="fixed left-0 right-0 top-4 z-50">
+      <nav className="fixed left-0 right-0 top-4 z-50 mt-0 pt-0">
         {/* Desktop Menu */}
-        <div className="mx-auto hidden mx-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black py-3 backdrop-blur-lg lg:flex">
+        <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black py-3 backdrop-blur-lg lg:flex">
           <div className="flex items-center justify-center gap-6">
             <div>
               <a href="#">
@@ -53,13 +56,13 @@ const Navbar = () => {
         <div className="rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
             <div>
-              <a href="#" className="">
+              <a href="#">
                 <img src={logo} alt="logo" width={90} />
               </a>
             </div>
             <div className="flex items-center">
               <button
-                className="foucus:outline-none lg:hidden"
+                className="focus:outline-none lg:hidden"
                 onClick={toggleMobileMenu}
               >
                 {isMobileMenuOpen ? (
@@ -77,7 +80,7 @@ const Navbar = () => {
                   <a
                     className="block w-full text-lg"
                     href={item.href}
-                    onClick={(e) => e.target.href}
+                    onClick={(e) => handleLinkClick(e, item.href)}
                   >
                     {item.label}
                   </a>
@@ -90,4 +93,5 @@ const Navbar = () => {
     </div>
   );
 };
+
 export default Navbar;

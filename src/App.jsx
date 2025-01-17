@@ -10,9 +10,9 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="rlative h-full overflow-auto antialiased">
+    <div className="relative h-full overflow-auto antialiased">
       <div className="fixed inset-0 bg-fixed bg-cover bg-center bg-img"></div>
-      <div className="relative z-10 flex flex-col items-center p-4 sace-y-8 container mx-auto">
+      <div className="relative z-10 flex flex-col items-center p-0 space-y-8 container mx-auto">
         <Hero />
         <Navbar />
         <Projects />
