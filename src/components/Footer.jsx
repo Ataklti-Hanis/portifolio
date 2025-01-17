@@ -1,5 +1,6 @@
 import logo from "../assets/logo.jpg";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
+import { FaPhone } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="mb-8 mt-20">
@@ -18,6 +19,12 @@ const Footer = () => {
           </a>
         ))}
       </div>
+      <p className="mt-8 text-center text-sm tracking-wide text-gray-400">
+        <FaPhone className="inline text-gray-400 mr-1" />
+        <a href="tel:+251978621451" className="text-gray-400">
+          +251978621451
+        </a>
+      </p>
       <p className="mt-8 text-center text-sm tracking-wide text-gray-400">
         &copy;CompileTab.All rights Reserved.
       </p>
