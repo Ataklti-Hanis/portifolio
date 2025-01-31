@@ -38,7 +38,7 @@ export const HERO = {
   name: "Ataklti Hanis",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a passionate frontend developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.",
+    "I am a passionate frontend developer with a talent for crafting beautiful and functional user interfaces. I thrive on transforming ideas into engaging web experiences and continuously seek innovative solutions to enhance user interaction.",
 };
 
 export const PROJECTS = [
